@@ -28,54 +28,44 @@ let actions = {
 								hover
             }
         },
+				nomadList: function() {
+		        return async function(dispatch) {
+		            var response = await fetch("http://localhost:3000/NomadList")
+									.then((response) => {
+										console.log(response);
+								     return response.json();
+								 });
+								console.log(response);
+
+		            //
+
+		            dispatch({
+		                    type: "NOMAD_LIST",
+		                    result: response,
+		            })
+		            // return response
+		        }
+		    },
+				getToggledList: function(list) {
+	        return async function(dispatch) {
+	            const response = await fetch(`http://localhost:3000/NomadList`)
+	            .then((response) => {
+									console.log(response.json());
+	                return response.json();
+	            });
+
+	            Promise.all([
+
+	                dispatch({
+	                    type: "GET_LIST",
+	                    result: response.items})
+	                ])
+
+	        }
+				}
+
 	}
 
-		// getGrouponList: function() {
-    //     return async function(dispatch) {
-    //         var response = await fetch(`http://gruponaso.herokuapp.com/?start=0&index=0&list=gustazos`)
-    //         .then((response) => {
-    //             return response.json();
-    //         });
-		//
-    //         dispatch({
-    //                 type: "GET_LIST",
-    //                 result: response.items,
-    //           })
-    //         return response
-    //     }
-    // },
-        // getToggledList: function(list) {
-        // return async function(dispatch) {
-        //     if (list.length === 0)
-        //         {
-        //             dispatch({
-        //             type: "GET_LIST",
-        //             result: []})
-        //         };
-				//
-        //     var newList = list.filter((elem,i) => {
-        //             return elem.active
-				//
-        //         });
-				//
-        //     newList = newList.map((elem,i) => {
-        //             return elem.name;
-        //         }).join(",");
-				//
-				//
-        //     const response = await fetch(`http://gruponaso.herokuapp.com/?start=0&index=0&list=${newList}`)
-        //     .then((response) => {
-        //         return response.json();
-        //     });
-
-            // Promise.all([
-
-                // dispatch({
-                //     type: "GET_LIST",
-                //     result: response.items})
-                // ])
-
-        // }
 
 
 

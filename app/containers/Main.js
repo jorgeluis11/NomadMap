@@ -15,7 +15,7 @@ import GoogleMap from 'google-map-react';
 var Menu = require('react-burger-menu').push;
 // var scroll = Scroll.animateScroll;
 
-let socket = io(`http://localhost:3000`)
+// let socket = io(`http://localhost:3000`)
 // let socket = io(`https://worldtweet.herokuapp.com/socket.io/socket.io.js`)
 let store = configureStore()
 
@@ -32,9 +32,9 @@ class Main extends Component {
   //Default Stuff
   constructor(props) {
     super(props);
-    socket.on('call tweets',function(tweet){
-      props.actions.addList(tweet);
-    });
+    // socket.on('call tweets',function(tweet){
+    //   props.actions.addList(tweet);
+    // });
 
     this.state = {
       center: {lat: 18.257503, lng: -66.481117},
@@ -44,14 +44,16 @@ class Main extends Component {
 
   static defaultProps = {
     center: {lat: 18.257503, lng: -66.481117},
-    zoom:9,
+    zoom:1,
     greatPlaceCoords: {lat: 59.724465, lng: 30.080121}
    }
 
   shouldComponentUpdate = shouldPureComponentUpdate;
 
-  // componentDidMount() {
-  // }
+
+  componentDidMount() {
+    this.props.actions.nomadList();
+  }
 
   _onChildClick = (key, childProps) => {
     const markerId = childProps.tweet.get('id');
@@ -147,13 +149,13 @@ class Main extends Component {
   //           <Menu styles={styles} customBurgerIcon={ <div><i className="glyphicon glyphicon-menu-hamburger" style={{fontSize:"2em"}}></i></div> } pageWrapId={ "page-wrap" } outerContainerId={ "outer-container" } right  >
   //           </Menu>
 
-  renderMarkers(tweet){
-    const place = tweet.place.bounding_box.coordinates[0];
-    let lng = (place[0][0] + place[1][0] + place[2][0] + place[3][0]) / 4
-    let lat = (place[1][1] + place[1][1] + place[1][1] + place[1][1]) / 4
-
-    return <Marker lat={lat} lng={lng} styles={{"width":"10px","height":"10px", fontSize:"1em"}} tweet={tweet} key={tweet.uniqueID} />;
-  }
+  // renderMarkers(tweet){
+  //   // const place = tweet.place.bounding_box.coordinates[0];
+  //   // let lng = (place[0][0] + place[1][0] + place[2][0] + place[3][0]) / 4
+  //   // let lat = (place[1][1] + place[1][1] + place[1][1] + place[1][1]) / 4
+  //
+  //   return <Marker lat={lat} lng={lng} styles={{"width":"10px","height":"10px", fontSize:"1em"}} tweet={tweet} key={tweet.uniqueID} />;
+  // }
   render() {
     // let tweets = [];
     // this.props.list.map((tweet) => {
@@ -162,42 +164,46 @@ class Main extends Component {
     //   tweets = [...tweets,tweet];
     // });
     //           center={this.state.center}
-
-    if (this.state.clickEvent) {
+    //
+    // if (this.state.clickEvent) {
+    //   var map = ( <GoogleMap
+    //       style={{width:'70%', height:'100%', position:"absolute"}}
+    //       defaultCenter={this.props.center}
+    //       defaultZoom={this.props.zoom}
+    //       center={this.state.center}
+    //       onChildClick={this._onChildClick}
+    //       onChildMouseEnter={this._onChildMouseEnter}
+    //       onChildMouseLeave={this._onChildMouseLeave}
+    //       hoverDistance={7}>
+    //       {
+    //            this.props.list.map((tweet) => this.renderMarkers(tweet)  )
+    //       }
+    //     </GoogleMap>);
+    // }else{
       var map = ( <GoogleMap
           style={{width:'70%', height:'100%', position:"absolute"}}
           defaultCenter={this.props.center}
           defaultZoom={this.props.zoom}
-          center={this.state.center}
           onChildClick={this._onChildClick}
           onChildMouseEnter={this._onChildMouseEnter}
           onChildMouseLeave={this._onChildMouseLeave}
           hoverDistance={7}>
           {
-               this.props.list.map((tweet) => this.renderMarkers(tweet)  )
-          }
-        </GoogleMap>);
-    }else{
-      var map = ( <GoogleMap
-          style={{width:'70%', height:'100%', position:"absolute"}}
-          defaultCenter={this.props.center}
-          defaultZoom={this.props.zoom}
-          onChildClick={this._onChildClick}
-          onChildMouseEnter={this._onChildMouseEnter}
-          onChildMouseLeave={this._onChildMouseLeave}
-          hoverDistance={7}>
-          {
-               this.props.list.map((tweet) => this.renderMarkers(tweet)  )
+               this.props.list.map((country) => <Marker lat={country.info.location.latitude} lng={country.info.location.longitude} styles={{"width":"10px","height":"10px", fontSize:"1em"}} country={country} key={country.uniqueID} />  )
           }
         </GoogleMap>)
-    }
+    // }
+    // {
+    //   this.props.list.map((country) => <Tweet country={country} key={tweet.uniqueID} onMouseEnterContainer={this.onMouseEnterContainer} onMouseLeaveContainer={this.onMouseLeaveContainer} onClickContainer={this.onClickContainer}/>)
+    // }
+      this.props.list.map((country)=>{
+        console.log(country.info.city.slug)
+      });
     return (
       <div className="map-container">
         <div id="outer-container">
           <div id="marker-list" style={{width:"30%", position:"absolute", right:"0px", zIndex:'2 !important', backgroundColor:"#fff",overflowY:"auto",height:"100%"}}>
-            {
-              this.props.list.map((tweet) => <Tweet tweet={tweet} key={tweet.uniqueID} onMouseEnterContainer={this.onMouseEnterContainer} onMouseLeaveContainer={this.onMouseLeaveContainer} onClickContainer={this.onClickContainer}/>)
-            }
+
           </div>
           <main id="page-wrap">
             {map}

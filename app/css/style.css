@@ -1,7 +1,7 @@
-@font-face {
+/*@font-face {
   font-family: 'Proxima Nova';
   src: url(../font/ProximaNova-Regular.otf);
-}
+}*/
 body{
   min-width: 380px;
 }
@@ -157,14 +157,14 @@ hr {
       display: inline;
     color: white;
 }
-
+/*
 .groupon-image.from-logo {
     display: block;
     height: 50px;
     background: url("../img/logo.png") top left no-repeat;
     background-size: 100%;
 
-}
+}*/
 
 .from-logo.groopanda {
     background-position: 0 15px;

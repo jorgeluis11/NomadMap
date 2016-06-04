@@ -35,6 +35,11 @@ export default function reducer(state, action) {
 					list:[...state.list],
 					loading:false
 				});
+		case "NOMAD_LIST":
+			return Object.assign({
+					list:action.result,
+					loading:false
+				});
 
 		// case "Toggle_Groupon":
 		// 	state.grouponList.map(toggle=>{
