@@ -78,6 +78,30 @@
 .flag-icon-ar.flag-icon-squared {
   background-image: url(../flags/1x1/ar.svg);
 }
+.flag-icon-mar-del-plata-argentina {
+  background-image: url(../flags/4x3/ar.svg);
+}
+.flag-icon-mar-del-plata-argentina.flag-icon-squared {
+  background-image: url(../flags/1x1/ar.svg);
+}
+.flag-icon-buenos-aires-argentina {
+  background-image: url(../flags/4x3/ar.svg);
+}
+.flag-icon-buenos-aires-argentina.flag-icon-squared {
+  background-image: url(../flags/1x1/ar.svg);
+}
+.flag-icon-cordoba-argentina {
+  background-image: url(../flags/4x3/ar.svg);
+}
+.flag-icon-cordoba-argentina.flag-icon-squared {
+  background-image: url(../flags/1x1/ar.svg);
+}
+.flag-icon-la-plata-argentina {
+  background-image: url(../flags/4x3/ar.svg);
+}
+.flag-icon-la-plata-argentina.flag-icon-squared {
+  background-image: url(../flags/1x1/ar.svg);
+}
 .flag-icon-as {
   background-image: url(../flags/4x3/as.svg);
 }
@@ -192,16 +216,118 @@
 .flag-icon-bo.flag-icon-squared {
   background-image: url(../flags/1x1/bo.svg);
 }
+.flag-icon-cochabamba-bolivia {
+  background-image: url(../flags/4x3/bo.svg);
+}
+.flag-icon-cochabamba-bolivia.flag-icon-squared {
+  background-image: url(../flags/1x1/bo.svg);
+}
+.flag-icon-santa-cruz-bolivia {
+  background-image: url(../flags/4x3/bo.svg);
+}
+.flag-icon-santa-cruz-bolivia.flag-icon-squared {
+  background-image: url(../flags/1x1/bo.svg);
+}
+.flag-icon-la-paz-bolivia {
+  background-image: url(../flags/4x3/bo.svg);
+}
+.flag-icon-la-paz-bolivia.flag-icon-squared {
+  background-image: url(../flags/1x1/bo.svg);
+}
 .flag-icon-bq {
   background-image: url(../flags/4x3/bq.svg);
 }
 .flag-icon-bq.flag-icon-squared {
   background-image: url(../flags/1x1/bq.svg);
 }
-.flag-icon-br {
+.flag-icon-natal-brazil {
   background-image: url(../flags/4x3/br.svg);
 }
-.flag-icon-br.flag-icon-squared {
+.flag-icon-natal-brazil.flag-icon-squared {
+  background-image: url(../flags/1x1/br.svg);
+}
+.flag-icon-florianopolis-brazil {
+  background-image: url(../flags/4x3/br.svg);
+}
+.flag-icon-florianopolis-brazil.flag-icon-squared {
+  background-image: url(../flags/1x1/br.svg);
+}
+.flag-icon-sao-paulo-brazil {
+  background-image: url(../flags/4x3/br.svg);
+}
+.flag-icon-sao-paulo-brazil.flag-icon-squared {
+  background-image: url(../flags/1x1/br.svg);
+}
+.flag-icon-curitiba-brazil {
+  background-image: url(../flags/4x3/br.svg);
+}
+.flag-icon-curitiba-brazil.flag-icon-squared {
+  background-image: url(../flags/1x1/br.svg);
+}
+.flag-icon-campinas-brazil {
+  background-image: url(../flags/4x3/br.svg);
+}
+.flag-icon-campinas-brazil.flag-icon-squared {
+  background-image: url(../flags/1x1/br.svg);
+}
+.flag-icon-goiania-brazil {
+  background-image: url(../flags/4x3/br.svg);
+}
+.flag-icon-goiania-brazil.flag-icon-squared {
+  background-image: url(../flags/1x1/br.svg);
+}
+.flag-icon-brasilia-brazil {
+  background-image: url(../flags/4x3/br.svg);
+}
+.flag-icon-brasilia-brazil.flag-icon-squared {
+  background-image: url(../flags/1x1/br.svg);
+}
+.flag-icon-belo-horizonte-brazil {
+  background-image: url(../flags/4x3/br.svg);
+}
+.flag-icon-belo-horizonte-brazil.flag-icon-squared {
+  background-image: url(../flags/1x1/br.svg);
+}
+.flag-icon-porto-alegre-brazil {
+  background-image: url(../flags/4x3/br.svg);
+}
+.flag-icon-porto-alegre-brazil.flag-icon-squared {
+  background-image: url(../flags/1x1/br.svg);
+}
+.flag-icon-porto-alegre-brazil {
+  background-image: url(../flags/4x3/br.svg);
+}
+.flag-icon-porto-alegre-brazil.flag-icon-squared {
+  background-image: url(../flags/1x1/br.svg);
+}
+.flag-icon-fortaleza-brazil {
+  background-image: url(../flags/4x3/br.svg);
+}
+.flag-icon-fortaleza-brazil.flag-icon-squared {
+  background-image: url(../flags/1x1/br.svg);
+}
+.flag-icon-rio-de-janeiro-brazil {
+  background-image: url(../flags/4x3/br.svg);
+}
+.flag-icon-rio-de-janeiro-brazil.flag-icon-squared {
+  background-image: url(../flags/1x1/br.svg);
+}
+.flag-icon-recife-brazil {
+  background-image: url(../flags/4x3/br.svg);
+}
+.flag-icon-recife-brazil.flag-icon-squared {
+  background-image: url(../flags/1x1/br.svg);
+}
+.flag-icon-belem-brazil {
+  background-image: url(../flags/4x3/br.svg);
+}
+.flag-icon-belem-brazil.flag-icon-squared {
+  background-image: url(../flags/1x1/br.svg);
+}
+.flag-icon-joao-pessoa-brazil {
+  background-image: url(../flags/4x3/br.svg);
+}
+.flag-icon-joao-pessoa-brazil.flag-icon-squared {
   background-image: url(../flags/1x1/br.svg);
 }
 .flag-icon-bs {
@@ -306,6 +432,12 @@
 .flag-icon-cl.flag-icon-squared {
   background-image: url(../flags/1x1/cl.svg);
 }
+.flag-icon-santiago-chile {
+  background-image: url(../flags/4x3/cl.svg);
+}
+.flag-icon-santiago-chile.flag-icon-squared {
+  background-image: url(../flags/1x1/cl.svg);
+}
 .flag-icon-cm {
   background-image: url(../flags/4x3/cm.svg);
 }
@@ -324,10 +456,58 @@
 .flag-icon-co.flag-icon-squared {
   background-image: url(../flags/1x1/co.svg);
 }
-.flag-icon-cr {
+.flag-icon-cartagena-colombia {
+  background-image: url(../flags/4x3/co.svg);
+}
+.flag-icon-cartagena-colombia.flag-icon-squared {
+  background-image: url(../flags/1x1/co.svg);
+}
+.flag-icon-barranquilla-colombia {
+  background-image: url(../flags/4x3/co.svg);
+}
+.flag-icon-barranquilla-colombia.flag-icon-squared {
+  background-image: url(../flags/1x1/co.svg);
+}
+.flag-icon-medellin-colombia {
+  background-image: url(../flags/4x3/co.svg);
+}
+.flag-icon-medellin-colombia.flag-icon-squared {
+  background-image: url(../flags/1x1/co.svg);
+}
+.flag-icon-bucaramanga-colombia {
+  background-image: url(../flags/4x3/co.svg);
+}
+.flag-icon-bucaramanga-colombia.flag-icon-squared {
+  background-image: url(../flags/1x1/co.svg);
+}
+.flag-icon-salento-colombia {
+  background-image: url(../flags/4x3/co.svg);
+}
+.flag-icon-salento-colombia.flag-icon-squared {
+  background-image: url(../flags/1x1/co.svg);
+}
+.flag-icon-santa-marta-colombia {
+  background-image: url(../flags/4x3/co.svg);
+}
+.flag-icon-santa-marta-colombi.flag-icon-squared {
+  background-image: url(../flags/1x1/co.svg);
+}
+.flag-icon-bogota-colombia {
+  background-image: url(../flags/4x3/co.svg);
+}
+.flag-icon-bogota-colombia.flag-icon-squared {
+  background-image: url(../flags/1x1/co.svg);
+}
+.flag-icon-cali-colombia {
+  background-image: url(../flags/4x3/co.svg);
+}
+.flag-icon-cali-colombia.flag-icon-squared {
+  background-image: url(../flags/1x1/co.svg);
+}
+.flag-icon-puerto-viejo-costa-rica {
   background-image: url(../flags/4x3/cr.svg);
 }
-.flag-icon-cr.flag-icon-squared {
+.flag-icon-puerto-viejo-costa-rica.flag-icon-squared {
   background-image: url(../flags/1x1/cr.svg);
 }
 .flag-icon-havana-cuba {
@@ -412,6 +592,24 @@
   background-image: url(../flags/4x3/ec.svg);
 }
 .flag-icon-ec.flag-icon-squared {
+  background-image: url(../flags/1x1/ec.svg);
+}
+.flag-icon-quito-ecuador {
+  background-image: url(../flags/4x3/ec.svg);
+}
+.flag-icon-quito-ecuador.flag-icon-squared {
+  background-image: url(../flags/1x1/ec.svg);
+}
+.flag-icon-cuenca-ecuador {
+  background-image: url(../flags/4x3/ec.svg);
+}
+.flag-icon-cuenca-ecuador.flag-icon-squared {
+  background-image: url(../flags/1x1/ec.svg);
+}
+.flag-icon-guayaquil-ecuador {
+  background-image: url(../flags/4x3/ec.svg);
+}
+.flag-icon-guayaquil-ecuador.flag-icon-squared {
   background-image: url(../flags/1x1/ec.svg);
 }
 .flag-icon-ee {
@@ -1129,11 +1327,23 @@
 .flag-icon-ng.flag-icon-squared {
   background-image: url(../flags/1x1/ng.svg);
 }
-.flag-icon-ni {
+.flag-icon-managua-nicaragua {
   background-image: url(../flags/4x3/ni.svg);
 }
-.flag-icon-ni.flag-icon-squared {
+.flag-icon-managua-nicaragua.flag-icon-squared {
   background-image: url(../flags/1x1/ni.svg);
+}
+.flag-icon-panama-city-panama {
+  background-image: url(../flags/4x3/pa.svg);
+}
+.flag-icon-panama-city-panama.flag-icon-squared {
+  background-image: url(../flags/1x1/pa.svg);
+}
+.flag-icon-bocas-del-toro-panama {
+  background-image: url(../flags/4x3/pa.svg);
+}
+.flag-icon-bocas-del-toro-panama.flag-icon-squared {
+  background-image: url(../flags/1x1/pa.svg);
 }
 .flag-icon-nl {
   background-image: url(../flags/4x3/nl.svg);
@@ -1187,6 +1397,24 @@
   background-image: url(../flags/4x3/pe.svg);
 }
 .flag-icon-pe.flag-icon-squared {
+  background-image: url(../flags/1x1/pe.svg);
+}
+.flag-icon-arequipa-peru {
+  background-image: url(../flags/4x3/pe.svg);
+}
+.flag-icon-arequipa-peru.flag-icon-squared {
+  background-image: url(../flags/1x1/pe.svg);
+}
+.flag-icon-lima-peru {
+  background-image: url(../flags/4x3/pe.svg);
+}
+.flag-icon-lima-peru.flag-icon-squared {
+  background-image: url(../flags/1x1/pe.svg);
+}
+.flag-icon-chachapoyas-peru {
+  background-image: url(../flags/4x3/pe.svg);
+}
+.flag-icon-chachapoyas-peru.flag-icon-squared {
   background-image: url(../flags/1x1/pe.svg);
 }
 .flag-icon-pf {
@@ -1549,6 +1777,12 @@
 .flag-icon-uy.flag-icon-squared {
   background-image: url(../flags/1x1/uy.svg);
 }
+.flag-icon-montevideo-uruguay {
+  background-image: url(../flags/4x3/uy.svg);
+}
+.flag-icon-montevideo-uruguay.flag-icon-squared {
+  background-image: url(../flags/1x1/uy.svg);
+}
 .flag-icon-uz {
   background-image: url(../flags/4x3/uz.svg);
 }
@@ -1571,6 +1805,12 @@
   background-image: url(../flags/4x3/ve.svg);
 }
 .flag-icon-ve.flag-icon-squared {
+  background-image: url(../flags/1x1/ve.svg);
+}
+.flag-icon-caracas-venezuela {
+  background-image: url(../flags/4x3/ve.svg);
+}
+.flag-icon-caracas-venezuela.flag-icon-squared {
   background-image: url(../flags/1x1/ve.svg);
 }
 .flag-icon-vg {
