@@ -2844,10 +2844,10 @@
 }
 
 .flag-icon-china.flag-icon-squared{
-  background-image: url(../flags/4x3/ch.svg);
+  background-image: url(../flags/4x3/cn.svg);
 }
 .flag-icon-china{
-  background-image: url(../flags/1x1/ch.svg);
+  background-image: url(../flags/1x1/cn.svg);
 }
 
 .flag-icon-australia.flag-icon-squared{
@@ -3309,4 +3309,88 @@
 }
 .flag-icon-nigeria{
   background-image: url(../flags/1x1/ng.svg);
+}
+.flag-icon-sudan.flag-icon-squared{
+  background-image: url(../flags/4x3/sd.svg);
+}
+.flag-icon-sudan{
+  background-image: url(../flags/1x1/sd.svg);
+}
+.flag-icon-ethiopia.flag-icon-squared{
+  background-image: url(../flags/4x3/et.svg);
+}
+.flag-icon-ethiopia{
+  background-image: url(../flags/1x1/et.svg);
+}
+.flag-icon-somalia.flag-icon-squared{
+  background-image: url(../flags/4x3/so.svg);
+}
+.flag-icon-somalia{
+  background-image: url(../flags/1x1/so.svg);
+}
+.flag-icon-kenya.flag-icon-squared{
+  background-image: url(../flags/4x3/ke.svg);
+}
+.flag-icon-kenya{
+  background-image: url(../flags/1x1/ke.svg);
+}
+.flag-icon-senegal.flag-icon-squared{
+  background-image: url(../flags/4x3/sn.svg);
+}
+.flag-icon-senegal{
+  background-image: url(../flags/1x1/sn.svg);
+}
+.flag-icon-uganda.flag-icon-squared{
+  background-image: url(../flags/4x3/ug.svg);
+}
+.flag-icon-uganda{
+  background-image: url(../flags/1x1/ug.svg);
+}
+.flag-icon-tanzania.flag-icon-squared{
+  background-image: url(../flags/4x3/tz.svg);
+}
+.flag-icon-tanzania{
+  background-image: url(../flags/1x1/tz.svg);
+}
+.flag-icon-mozambique.flag-icon-squared{
+  background-image: url(../flags/4x3/mz.svg);
+}
+.flag-icon-mozambique{
+  background-image: url(../flags/1x1/mz.svg);
+}
+.flag-icon-zimbabwe.flag-icon-squared{
+  background-image: url(../flags/4x3/zw.svg);
+}
+.flag-icon-zimbabwe{
+  background-image: url(../flags/1x1/zw.svg);
+}
+.flag-icon-rwanda.flag-icon-squared{
+  background-image: url(../flags/4x3/rw.svg);
+}
+.flag-icon-rwanda{
+  background-image: url(../flags/1x1/rw.svg);
+}
+.flag-icon-namibia.flag-icon-squared{
+  background-image: url(../flags/4x3/na.svg);
+}
+.flag-icon-namibia{
+  background-image: url(../flags/1x1/na.svg);
+}
+.flag-icon-angola.flag-icon-squared{
+  background-image: url(../flags/4x3/ao.svg);
+}
+.flag-icon-angola{
+  background-image: url(../flags/1x1/ao.svg);
+}
+.flag-icon-dr-congo.flag-icon-squared{
+  background-image: url(../flags/4x3/cd.svg);
+}
+.flag-icon-dr-congo{
+  background-image: url(../flags/1x1/cd.svg);
+}
+.flag-icon-congo.flag-icon-squared{
+  background-image: url(../flags/4x3/cg.svg);
+}
+.flag-icon-congo{
+  background-image: url(../flags/1x1/cg.svg);
 }
