@@ -1012,6 +1012,7 @@
 .flag-icon-id.flag-icon-squared {
   background-image: url(../flags/1x1/id.svg);
 }
+
 .flag-icon-ie {
   background-image: url(../flags/4x3/ie.svg);
 }
@@ -1186,6 +1187,7 @@
 .flag-icon-kz.flag-icon-squared {
   background-image: url(../flags/1x1/kz.svg);
 }
+
 .flag-icon-la {
   background-image: url(../flags/4x3/la.svg);
 }
@@ -1216,6 +1218,7 @@
 .flag-icon-lk.flag-icon-squared {
   background-image: url(../flags/1x1/lk.svg);
 }
+
 .flag-icon-lr {
   background-image: url(../flags/4x3/lr.svg);
 }
@@ -2695,12 +2698,7 @@
 .flag-icon-virginia-beach-va-united-states.flag-icon-squared {
   background-image: url(../flags/1x1/us.svg);
 }
-.flag-icon-hilo-hawaii-united-states {
-  background-image: url(../flags/4x3/us.svg);
-}
-.flag-icon-hilo-hawaii-united-states.flag-icon-squared {
-  background-image: url(../flags/1x1/us.svg);
-}
+
 .flag-icon-detroit-mi-united-states {
   background-image: url(../flags/4x3/us.svg);
 }
@@ -2870,6 +2868,62 @@
   background-image: url(../flags/1x1/un.svg);
 }
 */
+
+/*.flag-icon-kazakhstan {
+  background-image: url(../flags/4x3/kz.svg);
+}
+.flag-icon-kazakhstan.flag-icon-squared {
+  background-image: url(../flags/1x1/kz.svg);
+}*/
+
+/*.flag-icon-indonesia {
+  background-image: url(../flags/4x3/id.svg);
+}
+.flag-icon-indonesia.flag-icon-squared {
+  background-image: url(../flags/1x1/id.svg);
+}*/
+
+.flag-icon-anchorage-ak-united-states {
+  background-image: url(../flags/4x3/alk.svg)!important;
+}
+.flag-icon-anchorage-ak-united-states.flag-icon-squared {
+  background-image: url(../flags/1x1/alk.svg)!important;
+}
+
+.flag-icon-honolulu-hawaii-united-states {
+  background-image: url(../flags/4x3/hwi.svg) !important;
+}
+.flag-icon-honolulu-hawaii-united-states.flag-icon-squared {
+  background-image: url(../flags/1x1/hwi.svg)!important;
+}
+.flag-icon-hilo-hawaii-united-states {
+  background-image: url(../flags/4x3/hwi.svg)!important;
+}
+.flag-icon-hilo-hawaii-united-states.flag-icon-squared {
+  background-image: url(../flags/1x1/hwi.svg)!important;
+}
+
+
+.flag-icon-sri-lanka {
+  background-image: url(../flags/4x3/lk.svg);
+}
+.flag-icon-sri-lanka.flag-icon-squared {
+  background-image: url(../flags/1x1/lk.svg);
+}
+
+.flag-icon-moldova {
+  background-image: url(../flags/4x3/md.svg);
+}
+.flag-icon-moldova.flag-icon-squared {
+  background-image: url(../flags/1x1/md.svg);
+}
+
+.flag-icon-croatia {
+  background-image: url(../flags/4x3/hr.svg);
+}
+.flag-icon-croatia.flag-icon-squared {
+  background-image: url(../flags/1x1/hr.svg);
+}
 
 .flag-icon-mexico {
   background-image: url(../flags/4x3/mx.svg);
