@@ -77,7 +77,7 @@ class Marker extends Component{
     // // <div style={{backgroundColor:"#fff", width:"50px", position:"absolute",top:"-50px"}}>
     //   {text}
     // </div>
-    let flag = `flag-icon flag-icon-${this.props.country.info.city.slug}`
+    let flag = `flag-icon flag-icon-${this.props.country.info.country.slug} flag-icon-${this.props.country.info.city.slug}`
     return(
       <div style={{position:"relative", top:"-7px", left:"-5px",cursor:"pointer"}}>
         <span className={flag}></span>
