@@ -3636,3 +3636,9 @@
 .flag-icon-congo{
   background-image: url(../flags/1x1/cg.svg);
 }
+.flag-icon-cambodia.flag-icon-squared{
+  background-image: url(../flags/4x3/kh.svg);
+}
+.flag-icon-cambodia{
+  background-image: url(../flags/1x1/kh.svg);
+}
