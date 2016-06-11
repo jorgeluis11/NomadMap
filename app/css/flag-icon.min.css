@@ -2883,6 +2883,13 @@
   background-image: url(../flags/1x1/id.svg);
 }*/
 
+.flag-icon-united-kingdom {
+  background-image: url(../flags/4x3/gb.svg);
+}
+.flag-icon-united-kingdom.flag-icon-squared {
+  background-image: url(../flags/1x1/gb.svg);
+}
+
 .flag-icon-anchorage-ak-united-states {
   background-image: url(../flags/4x3/alk.svg)!important;
 }
@@ -3219,12 +3226,12 @@
 .flag-icon-ireland.flag-icon-squared{
   background-image: url(../flags/4x3/ie.svg);
 }
-.flag-icon-united-kingdom{
+/*.flag-icon-united-kingdom{
   background-image: url(../flags/1x1/hm.svg);
 }
 .flag-icon-united-kingdom.flag-icon-squared{
   background-image: url(../flags/4x3/hm.svg);
-}
+}*/
 .flag-icon-denmark{
   background-image: url(../flags/1x1/dk.svg);
 }

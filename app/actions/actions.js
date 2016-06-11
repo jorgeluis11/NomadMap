@@ -32,10 +32,10 @@ let actions = {
 		        return async function(dispatch) {
 		            var response = await fetch("http://localhost:3000/NomadList")
 									.then((response) => {
-										console.log(response);
+										// console.log(response);
 								     return response.json();
 								 });
-								console.log(response);
+								// console.log(response);
 
 		            //
 
@@ -50,7 +50,7 @@ let actions = {
 	        return async function(dispatch) {
 	            const response = await fetch(`http://localhost:3000/NomadList`)
 	            .then((response) => {
-									console.log(response.json());
+									// console.log(response.json());
 	                return response.json();
 	            });
 

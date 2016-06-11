@@ -32,10 +32,14 @@ export default function reducer(state, action) {
 			// console.log("index",index);
 			state.list[index].hover = action.hover;
 			return Object.assign({
-					list:[...state.list],
-					loading:false
+					list:[...state.list]
 				});
 		case "NOMAD_LIST":
+
+			action.result.map((country)=>{
+				country.uniqueID = newId();
+				country.hover = false;
+			})
 			return Object.assign({
 					list:action.result,
 					loading:false

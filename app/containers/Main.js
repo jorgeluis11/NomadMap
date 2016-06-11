@@ -56,6 +56,7 @@ class Main extends Component {
   }
 
   _onChildClick = (key, childProps) => {
+    console.log("click");
     const markerId = childProps.tweet.get('id');
     const index = this.props.list.findIndex(m => m.get('id') === markerId);
     if (this.props.onChildClick) {
@@ -65,13 +66,14 @@ class Main extends Component {
   }
 
   _onChildMouseEnter = (key, childProps) => {
-    let list = document.getElementById("marker-list");
-    // let current = this.cumulativeOffset(list)
-    let scroll = this.cumulativeOffset(document.getElementById(`${key}`));
-    // let scroll = scrollTop;
-    // this.scrollUp(current,scroll.top,document.getElementById("marker-list"));
-    // var doc = document.body,
-    list.scrollTop = scroll.top- 280;
+    // console.log(key);
+    // let list = document.getElementById("marker-list");
+      // let current = this.cumulativeOffset(list)
+    // let scroll = this.cumulativeOffset(document.getElementById(`${key}`));
+      // let scroll = scrollTop;
+      // this.scrollUp(current,scroll.top,document.getElementById("marker-list"));
+      // var doc = document.body,
+    // list.scrollTop = scroll.top- 280;
 
     // if (scroll.top > current.top) {
     //   console.log(scroll);
@@ -86,7 +88,9 @@ class Main extends Component {
     // }
 
     // document.getElementById("marker-list").scrollTop = ;
-    this.props.actions.hoverTweet(key,true);
+    // this.props.actions.hoverTweet(key,true);
+    // console.log(childProps)
+    // childProps.hover();
   }
 
 
@@ -138,7 +142,7 @@ class Main extends Component {
     //   this.props.onMarkerHover(-1);
     // }
     // childProps.hoverFunc(false);
-    this.props.actions.hoverTweet(key,false);
+    // this.props.actions.hoverTweet(key,false);
   }
 
   _onBalloonCloseClick = () => {
@@ -196,9 +200,9 @@ class Main extends Component {
     // {
     //   this.props.list.map((country) => <Tweet country={country} key={tweet.uniqueID} onMouseEnterContainer={this.onMouseEnterContainer} onMouseLeaveContainer={this.onMouseLeaveContainer} onClickContainer={this.onClickContainer}/>)
     // }
-      this.props.list.map((country)=>{
-        console.log(country.info.city.slug)
-      });
+      // this.props.list.map((country)=>{
+      //   // console.log(country.info.city.slug)
+      // });
     return (
       <div className="map-container">
         <div id="outer-container">
