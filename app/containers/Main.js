@@ -56,12 +56,12 @@ class Main extends Component {
   }
 
   _onChildClick = (key, childProps) => {
-    console.log("click");
-    const markerId = childProps.tweet.get('id');
-    const index = this.props.list.findIndex(m => m.get('id') === markerId);
-    if (this.props.onChildClick) {
-      this.props.onChildClick(index);
-    }
+    // console.log("click");
+    // const markerId = childProps.tweet.get('id');
+    // const index = this.props.list.findIndex(m => m.get('id') === markerId);
+    // if (this.props.onChildClick) {
+    //   this.props.onChildClick(index);
+    // }
 
   }
 
@@ -160,6 +160,8 @@ class Main extends Component {
   //
   //   return <Marker lat={lat} lng={lng} styles={{"width":"10px","height":"10px", fontSize:"1em"}} tweet={tweet} key={tweet.uniqueID} />;
   // }
+
+
   render() {
     // let tweets = [];
     // this.props.list.map((tweet) => {
@@ -185,15 +187,18 @@ class Main extends Component {
     //     </GoogleMap>);
     // }else{
       var map = ( <GoogleMap
+
           style={{width:'70%', height:'100%', position:"absolute"}}
           defaultCenter={this.props.center}
           defaultZoom={this.props.zoom}
           onChildClick={this._onChildClick}
           onChildMouseEnter={this._onChildMouseEnter}
           onChildMouseLeave={this._onChildMouseLeave}
-          hoverDistance={7}>
+          hoverDistance={7}
+          onContextMenu={function(){console.log("testt")}}
+          >
           {
-               this.props.list.map((country) => <Marker lat={country.info.location.latitude} lng={country.info.location.longitude} styles={{"width":"10px","height":"10px", fontSize:"1em"}} country={country} key={country.uniqueID} />  )
+               this.props.list.map((country) => <Marker lat={country.info.location.latitude} lng={country.info.location.longitude} selectedFirst={this.props.actions.selectFirst} selectedSecond={this.props.actions.selectSecond} styles={{"width":"10px","height":"10px", fontSize:"1em"}} country={country} key={country.uniqueID} />  )
           }
         </GoogleMap>)
     // }

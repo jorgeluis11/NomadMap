@@ -5,12 +5,14 @@ import thunk from 'redux-thunk';
 
 
 let finalCreateStore = compose(
-	// applyMiddleware(logger(), thunk)
-	applyMiddleware( thunk)
+	applyMiddleware(logger(), thunk)
+	// applyMiddleware( thunk)
 
 )(createStore)
 
 let initialState =  {
+		first:{},
+		second:{},
     list:[],
     loading:false
 }

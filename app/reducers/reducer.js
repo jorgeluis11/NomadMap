@@ -28,11 +28,28 @@ export default function reducer(state, action) {
 			// console.log("id",action.id)
 			// console.log(state.list)
 			// console.log(action)
-			const index = state.list.findIndex(m => m.uniqueID == action.id);
+			var index = state.list.findIndex(m => m.uniqueID == action.id);
 			// console.log("index",index);
 			state.list[index].hover = action.hover;
 			return Object.assign({
 					list:[...state.list]
+				});
+		case "SELECT_FIRST":
+			var index = state.list.findIndex(m => m.uniqueID == action.id);
+
+			return Object.assign({
+					first:state.list[index],
+					second:state.second,
+					list:[...state.list]
+				});
+		case "SELECT_SECOND":
+			var index = state.list.findIndex(m => m.uniqueID == action.id);
+
+			return Object.assign({
+					first:state.first,
+					second:state.list[index],
+					list:[...state.list]
+
 				});
 		case "NOMAD_LIST":
 

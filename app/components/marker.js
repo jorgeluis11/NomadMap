@@ -5,48 +5,15 @@ import shouldPureComponentUpdate from 'react-pure-render/function';
 class Marker extends Component{
   constructor(props){
     super(props)
-    this.state = {
-      hover: false,
-    }
-    // this.changeHover = changeHover.bind(this);
-
   }
 
 
+  shouldComponentUpdate = shouldPureComponentUpdate;
 
-  // changeHover(){
-  //   this.state.hover
-  // }
-  //
-  // static defaultProps = { hover: ()=>{console.log(changeHover)} }
-
-
-  componentWillReceiveProps(newProps) {
-    // you don't have to do this check first, but some times it helps prevent against an unneeded render.
-    if (newProps.hover != this.state.hover) {
-      this.setState({startTime: newProps.startTime});
-    }
+  handleContextMenu(e) {
+    e.preventDefault();
+    console.log("test");
   }
-
-
-
-  // static defaultProps = {
-  //   tweet.hover:true
-  //
-  // }
-
-  // componentWillUpdate (nextProps, nextState) {
-  //     return
-  // }
-
-  // shouldComponentUpdate = shouldPureComponentUpdate;
-
-  // shouldComponentUpdate(nextProps) {
-  //   // console.log(this.props.country.hover !== nextProps.country.hover);
-  //   // console.log(nextProps.country.hover);
-  //   return this.props.country.hover === true;
-  // }
-
 
 
 
@@ -56,6 +23,17 @@ class Marker extends Component{
     // var country = this.props.country;
     // var color = "#55acee";
     // console.log("List");
+    const preventDefault = (e) => { e.preventDefault() }
+    const handleChange = (e) => {
+      if (e.buttons === 1) {
+        // console.log('first');
+        this.props.selectedFirst(this.props.country.uniqueID);
+      }else if (e.buttons === 2) {
+        // console.log('second');
+        this.props.selectedSecond(this.props.country.uniqueID);
+      }
+      //  console.log({buttons: e.buttons === 2});
+     };
 
     if (this.props.$hover)
     {
@@ -70,7 +48,7 @@ class Marker extends Component{
         </div>
       )
       var textContainer = (
-        <div>
+        <div  >
 
           <div style={{position:"absolute", top:"-120px", width:"400px",overflowY:"auto", left:"-100px", zIndex:"999", backgroundColor:"white",
           padding:"10px", borderRadius:"5px"}}>
@@ -92,11 +70,12 @@ class Marker extends Component{
     }
 
     let flag = `flag-icon flag-icon-${this.props.country.info.country.slug} flag-icon-${this.props.country.info.city.slug}`
+    // console.log(this.contextMenu);
     return(
-      <div style={{position:"relative", top:"-7px", left:"-5px",cursor:"pointer"}}>
+      <div onContextMenu={preventDefault} onMouseDown={handleChange}  style={{position:"relative", top:"-7px", left:"-6px",cursor:"pointer"}}>
         {textContainer}
-        <span className={flag}></span>
-    </div>
+        <span  className={flag}></span>
+      </div>
 
     );
   }

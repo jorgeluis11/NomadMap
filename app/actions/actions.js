@@ -28,6 +28,18 @@ let actions = {
 								hover
             }
         },
+        selectFirst: function(id){
+            return {
+                type:"SELECT_FIRST",
+								id
+            }
+        },
+        selectSecond: function(id){
+            return {
+                type:"SELECT_SECOND",
+								id
+            }
+        },
 				nomadList: function() {
 		        return async function(dispatch) {
 		            var response = await fetch("http://localhost:3000/NomadList")
