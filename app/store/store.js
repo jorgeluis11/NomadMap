@@ -11,8 +11,8 @@ let finalCreateStore = compose(
 )(createStore)
 
 let initialState =  {
-		first:{},
-		second:{},
+		first:undefined,
+		second:undefined,
     list:[],
     loading:false
 }

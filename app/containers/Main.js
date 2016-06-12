@@ -7,7 +7,8 @@ import {connect, Provider} from 'react-redux'
 import { bindActionCreators } from 'redux'
 import configureStore from '../store/store'
 import actions from '../actions/actions'
-import Tweet from '../components/tweet'
+// import Tweet from '../components/tweet'
+import Compare from '../components/compare'
 import Marker from '../components/marker'
 import shouldPureComponentUpdate from 'react-pure-render/function';
 import GoogleMap from 'google-map-react';
@@ -212,7 +213,7 @@ class Main extends Component {
       <div className="map-container">
         <div id="outer-container">
           <div id="marker-list" style={{width:"30%", position:"absolute", right:"0px", zIndex:'2 !important', backgroundColor:"#fff",overflowY:"auto",height:"100%"}}>
-
+            <Compare first={this.props.first} second={this.props.second}/>
           </div>
           <main id="page-wrap">
             {map}
