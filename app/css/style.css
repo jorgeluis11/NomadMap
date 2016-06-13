@@ -251,7 +251,7 @@ height: 450px;
 
 .profile-picture{
     width: 100%;
-    
+
     border-radius: 5px;
   }
 
@@ -359,4 +359,21 @@ height: 450px;
   border-right: 10px solid transparent;
 
   border-top: 10px solid white;
+}
+
+
+/*Cost of Living*/
+.expesive{
+  color: #BE5142;
+}
+
+.col-sm-4{
+  padding:0 !important;
+}
+.col-sm-5{
+  padding:0 !important;
+}
+
+.less{
+  color: #5FC547;
 }

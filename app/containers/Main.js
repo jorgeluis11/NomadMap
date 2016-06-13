@@ -189,7 +189,7 @@ class Main extends Component {
     // }else{
       var map = ( <GoogleMap
 
-          style={{width:'70%', height:'100%', position:"absolute"}}
+          style={{width:'60%', height:'100%', position:"absolute"}}
           defaultCenter={this.props.center}
           defaultZoom={this.props.zoom}
           onChildClick={this._onChildClick}
@@ -212,7 +212,7 @@ class Main extends Component {
     return (
       <div className="map-container">
         <div id="outer-container">
-          <div id="marker-list" style={{width:"30%", position:"absolute", right:"0px", zIndex:'2 !important', backgroundColor:"#fff",overflowY:"auto",height:"100%"}}>
+          <div id="marker-list" style={{width:"44%", position:"absolute", right:"0px", zIndex:'2 !important', backgroundColor:"#fff",overflowY:"auto",height:"100%"}}>
             <Compare first={this.props.first} second={this.props.second}/>
           </div>
           <main id="page-wrap">

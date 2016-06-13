@@ -28,6 +28,66 @@ class Compare extends Component{
     this.props.onClickContainer(this.props.tweet);
   }
 
+  comparePrice(first,second){
+    //       //
+    if (first > second)
+      var color = "expensive glyphicon glyphicon-triangle-top";
+    else
+      var color = "less glyphicon glyphicon-triangle-bottom";
+
+    return (
+      <div>
+        <span className={color}>{first}</span>
+      </div>
+    )
+  }
+
+  renderCompare(first, second, firstOne){
+    if (firstOne)
+      return (
+        <div style={{textAlign:"center"}}>
+              <div className="img-responsive" style={{color:"white",backgroundSize:"cover",background:`url(https://nomadlist.com/${first.media.image["250"]})`}}>
+                <div style={{backgroundColor:"rgba(0,0,0,0.5)",
+                zIndex:"999",
+                position: 'relative',
+                top: '0',
+                left: '0',
+                width: '100%',
+                height: '100%'}}>
+
+                  {first.info.country.name}
+                  <br/>
+                  {first.info.city.name}
+                </div>
+              </div>
+
+          ${first.cost.nomad.USD}
+
+        </div>
+      );
+    return (
+      <div style={{textAlign:"center"}}>
+            <div className="img-responsive" style={{color:"white",backgroundSize:"cover",background:`url(https://nomadlist.com/${first.media.image["250"]})`}}>
+              <div style={{backgroundColor:"rgba(0,0,0,0.5)",
+              zIndex:"999",
+              position: 'relative',
+              top: '0',
+              left: '0',
+              width: '100%',
+              height: '100%'}}>
+
+                {first.info.country.name}
+                <br/>
+                {first.info.city.name}
+              </div>
+            </div>
+
+        ${this.comparePrice(first.cost.nomad.USD, second.cost.nomad.USD)}
+
+      </div>
+    );
+  }
+
   render(){
     // var first = this.props.tweet;
     // var second = this.props.tweet;
@@ -53,15 +113,23 @@ class Compare extends Component{
     var first = ""
     var second = "";
     if (this.props.first)
-      first = this.props.first.info.city.name;
+      first = this.renderCompare(this.props.first, this.props.second, true);
     if (this.props.second)
-      second = this.props.second.info.city.name;
-    if (this.props.first|| this.props.second) {
-      content = <div>{first}{second}</div>;
-    }
+      second = this.renderCompare(this.props.second, this.props.first, false);
+
     return(
-      <div>
-        {content}
+      <div className="row">
+        <div className="col-sm-5">
+          {first}
+        </div>
+        <div className="col-sm-2">
+          <br/>
+          <br/>
+           NomadCost™
+        </div>
+        <div className="col-sm-5">
+          {second}
+        </div>
       </div>
     );
   }
